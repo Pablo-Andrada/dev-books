@@ -5,10 +5,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Dev Books</title>
 	</head>
 	<body>
-		<slot />
+		<div>
+			<slot />
+		</div>
 	</body>
 </html>
 
@@ -17,5 +19,11 @@
 		font-family: system-ui, sans-serif;
 		background-color: black;
 		color: beige;
+	}
+	body {
+		@apply grid place-content-center p-20;
+	}
+	body > div {
+		@apply container;
 	}
 </style>
